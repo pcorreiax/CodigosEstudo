@@ -5,6 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Jokenpô</title>
+
+	<style>
+		*{
+			font-family: Helvetica Neue, Helvetica, Arial;
+			font-weight: 400;
+			cursor: default;
+		}
+	</style>
 </head>
 <body>
 	<div id="principal">
@@ -13,7 +21,13 @@
 		<div id="placar">
 
 			<div id="jogador">
-				Jogador
+				<h2 id="jogador-nome">Irineu</h2>
+				<span id="jogador-pontos">0</span>
+				<ul id="jogador-escolha">
+					<li><a id="jogador-escolha-1"><img src="img/pedra.png"></a></li>
+					<li><a id="jogador-escolha-2"><img src="img/papel.png"></a></li>
+					<li><a id="jogador-escolha-3"><img src="img/tesoura.png"></a></li>
+				</ul>
 			</div>
 			<div id="vs">
 				vs

@@ -1,29 +1,83 @@
 #principal {
 	border: 1px solid blue;
+
 }
 
 #placar{
 	border: 1px solid greenyellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
 }
 
+#jogador, #computador{
+	position: relative;
+	flex-grow: 1;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+#jogador h2, #computador h2{
+		margin: 0;
+		padding: 0;
+}
+
+
 #jogador{
-	background-color: red;
-	width: 40%;
-	float: left;
+	background-color: #e74c3c;
 }
 
 #vs{
-	background-color: yellow;
-	width: 20%;
-	float: left;
+	color: black;
 }
 
 #computador{
-	background-color: lightblue;
-	width: 40%;
-	float: left;
+	background-color: #3498db;
 }
 
 #mensagens{
-	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#jogador-escolha{
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#jogador-nome, #computador-nome{
+	font-size: 24px;
+}
+
+#jogador-pontos, #computador-pontos{
+	font-size: 52px;
+	position: absolute;
+	top: 8px;
+
+}
+
+#jogador-pontos{
+	right: 20px;
+}
+
+#jogador-escolha li{
+	display: inline;
+	padding: 0 15px;
+
+}
+
+#jogador-escolha a{
+	opacity: .2;
+}
+
+#jogador-escolha a:hover{
+	opacity: 1;
+}
+
+#jogador-escolha img{
+	max-width: 80px;
 }
