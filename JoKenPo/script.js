@@ -14,7 +14,7 @@ var placarjogador = 1;
 var placarComputador = 1;
 
 jogadorNome.innerHTML = nome;
-
+mensagens.innerHTML = "Bem vindo, " + nome;
 
 jogadorEscolha1.onclick = function(){
   numeroAleatorio = gerarNumero(1, 3);
@@ -84,9 +84,6 @@ jogadorEscolha3.onclick = function(){
     jogadorEscolha3.style.opacity = 1;
   }
 }
-
-
-
 
 function gerarNumero(min, max){
   min = Math.ceil(min);
