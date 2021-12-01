@@ -1,5 +1,3 @@
-#principal {
-}
 
 #titulo{
 	text-align: center;
@@ -90,4 +88,8 @@ position: absolute;
 
 #jogador-escolha img, #computador-escolha img{
 	max-width: 80px;
+}
+
+#jogador-escolha img a{
+	max-width: 20px;
 }
