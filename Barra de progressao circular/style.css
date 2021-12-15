@@ -1,0 +1,62 @@
+*{
+    border: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    background: #e3edf7;
+}
+
+.skills, .outter, .inner{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills{
+    width: 160px;
+    height: 160px;
+}
+
+.outter{
+    width: 160px;
+    height: 160px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+                
+}
+
+.inner{
+    width: 120px;
+    height: 120px;
+    box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 10px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.2)
+
+}
+
+#number{
+    font-weight: 600px;
+    color: #555;
+}
+
+circle{    
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 165;
+}
+
+svg{
+    position: absolute;
+    
+}
