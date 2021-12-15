@@ -23,7 +23,7 @@ var teste = document.getElementById('lista-convidados');
 
 enviar.onclick = function(){
     console.log(adicionarConvidado(nome.value, idade.value, cpf.value));
-    teste.innerHTML = "<li>Nome: "+nome.value+" | Idade: "+idade.value+"  | CPF: "+cpf.value+"</li></br>"
+    teste.innerHTML += "<li>Nome: "+nome.value+" | Idade: "+idade.value+"  | CPF: "+cpf.value+"</li></br>"
     
 }
 
