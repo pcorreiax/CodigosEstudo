@@ -1,13 +1,15 @@
 *{
     border: 0;
     padding: 0;
-
 }
 
-body{
+main{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+body{
     margin-top: 15%;
     background: #e3edf7;
 }
@@ -53,10 +55,19 @@ circle{
     stroke: url(#GradientColor);
     stroke-width: 20px;
     stroke-dasharray: 472;
-    stroke-dashoffset: 165;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
 }
 
 svg{
     position: absolute;
     
+}
+
+
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 165;
+    }
 }
