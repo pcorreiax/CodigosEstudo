@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: futura-lt-w01-book,sans-serif;
+    background-image:url(./img/background.webp);
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-style: bold;
+    background-color: rgb(206, 206, 206, 0.3);
+}
+
+.logo{
+    position: absolute;
+    left: 40px;
+}
+
+.menu{
+    position: absolute;
+    right: 40px;
+}
+
+.menu ul li{
+    display: inline;
+    padding-left: 20px;
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 543px;
+    
+}
+.banner{
+    position: absolute;
+    top:0;
+}
+
+.balao{
+    position: absolute;
+    bottom:30px;
+    left:95px;
+}
+
+.balao-texto{
+    position: absolute;
+    top: 85px;
+    left: 65px;
+    max-width: 430px;
+    font-size: 18px;
+    text-align: center;
+}
+.foco-empresa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+.foco-texto{
+    position: relative;
+    top: 50px;
+    text-align: center;   
+}
+.foco-texto h1, .foco-texto h2, .foco-texto h3, .foco-texto h4{
+    padding-bottom: 30px;
+}
