@@ -1,84 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
-    font-family: futura-lt-w01-book,sans-serif;
-    background-image:url(./img/background.webp);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #ccc;
+    height: 200vmax;
 }
 
-a{
-    text-decoration: none;
-}
-a:visited{
-    color: black;
-}
-
-.nav-bar {
+.nav-bar{
     position: sticky;
     top: 0;
-    padding: 40px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    height: 10vh;
+    background-color: rgba(255, 254, 254, 0.5);
     z-index: 1;
-    font-style: bold;
-    background-color: rgb(206, 206, 206, 0.3);
 }
 
 .logo{
-    position: absolute;
-    left: 40px;
-}
-
-.menu{
-    position: absolute;
-    right: 40px;
+    padding: 0 0 0 20px;
 }
 
 .menu ul li{
     display: inline;
-    padding-left: 20px;
+    list-style: none;
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
-.page{
+.menu ul li:hover{
+    color: #ffdfad;
+}
+.menu ul:nth-child(1){
+    color: #fbb03b;
+}
+a, a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+
+.facebook{
+    position: fixed;
+    top: 250px;
+    left: 2%;
+}
+.instagram{
+    position: fixed;
+    top: 300px;
+    left: 2%;
+}
+
+.principal{
+    height: 616px;
+    width: 100%;
+    position: absolute;
+    top: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 543px;
-    
 }
-.banner{
-    position: absolute;
-    top:0;
+.imagem-principal{
+    position: relative;
 }
-
-.balao{
+.balao-layout, .balao-texto{
     position: absolute;
-    bottom:30px;
-    left:95px;
+    bottom: 30px;
+    left: 100px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 17px;
 }
 
 .balao-texto{
-    position: absolute;
-    top: 85px;
-    left: 65px;
-    max-width: 430px;
-    font-size: 18px;
+    left: 80px; 
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
-.foco-empresa{
+
+.lista-exemplos{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    
-} 
-.foco-texto{
-    position: relative;
-    top: 50px;
-    text-align: center;   
+    margin-left: 40%;
+    text-align: left;
 }
-.foco-texto h1, .foco-texto h2, .foco-texto h3, .foco-texto h4{
-    padding-bottom: 30px;
+.produtos{
+    display: flex;
+    justify-content: center;
 }
